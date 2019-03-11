@@ -1,0 +1,108 @@
+/* General styles */
+
+body {
+   margin: 0;
+   display: flex;
+   justify-content: space-around;
+   font-family: 'Work Sans', sans-serif;
+   background-image: url(../img/diet.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+   color: #FBFCFF;
+}
+h3 {
+   text-transform: uppercase;
+}
+p {
+ text-align: justify;  
+}
+input[type=submit], input[type=number]{
+   border: none;
+   outline: none;
+   border-radius: 20px;
+}
+input[type=number] {
+   padding: 15px 10px;
+   margin-left: 20px;
+}
+::placeholder {
+   text-align: right;
+}
+input[type=submit] {
+   padding: 20px 50px;
+   text-transform: uppercase;
+   font-weight: 600;
+   background-color: #9C989C;
+   color: #FBFCFF;
+}
+input[type=radio]{
+   height: 20px;
+   width: 20px;
+}
+input[type=radio]:checked {
+   background-color: #9C989C;
+}
+
+/* Class styles */
+
+.container {
+   width: 20%;
+   margin: 50px 0 10px 0;
+   padding: 20px 60px;
+   border-radius: 10px;
+   text-align: left;
+   opacity: 0.92;
+   background-color: #1C3F95;
+}
+.title {
+   width: 95%;
+}
+.your-value {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 50px 0;
+}
+.gender {
+   font-size: 1.2em;
+   margin-right: 30px;
+}
+.submit {
+   display: flex;
+   justify-content: center;
+   margin: 50px;
+}
+.info-container {
+   width: 40%;
+}
+
+/* Media Query */
+
+@media (max-width: 1024px){
+   body{
+      flex-direction: column;
+      align-items: center;
+   }
+   .container {
+      width: 50%;
+      padding: 10px 30px;
+   }
+}
+@media (max-width: 768px){
+   body{
+      font-size: 0.9em;
+   }
+   input[type=number] {
+   padding: 10px 5px;
+   margin-left: 20px;
+}
+   label {
+      font-size: 1.2em;
+   }
+}
+@media (max-width: 520px){
+      .container {
+      width: 70%;
+   }
+}

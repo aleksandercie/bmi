@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+   <title>Body Mass Index</title>
+   <!--   Google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+   <!--  Normalize  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <!--   Main styles-->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!--  Calculate BMI-->
+   <div class="container calculation">
+      <div class="title">
+         <h1>Calculate Your Body Mass Index</h1>
+      </div>
+      <form>
+         <div class="your-value">
+            <div>
+               <input type="radio" name="gender">
+               <label class="gender" for="gender">Male</label>
+            </div>
+            <div>
+               <input type="radio" name="gender">
+               <label class="gender" for="gender">Female</label>
+            </div>
+
+         </div>
+
+         <div class="your-value">
+            <label for="weight">weight:</label>
+            <input id="weight-value" type="number" min="1" placeholder="kg">
+         </div>
+         <div class="your-value">
+            <label for="weight">height:</label>
+            <input id="height-value" type="number" min="1" placeholder="cm">
+         </div>
+         <div class="submit">
+            <input id="calculate" type="submit" value="Calculate your bmi">
+         </div>
+      </form>
+      <div>
+         <h2 id="description"></h2>
+         <h3 id="result"></h3>
+         <h3 id="info"></h3>
+      </div>
+
+   </div>
+   
+   <!--        Information BMI -->
+   <div class="container info-container">
+      <div>
+         <h1>What's Bmi</h1>
+         <p>BMI compares your weight to your height, and is calculated by dividing your weight by your height. It gives you an idea of whether you’re 'seriously underweight', 'underweight', 'normal weight', 'overweight', or 'obese' for your height. BMI is one type of tool to help health professionals assess the risk for chronic disease. </p>
+         <h2>What Your Result Means</h2>
+         <p>You can interpret your BMI result using this simple chart. For adults, BMI results are interpreted as follows</p>
+         <ul>
+            <li>BMI below 16.5 = Seriously underweight</li>
+            <li>BMI 16.5 – 18.5 = Underweight</li>
+            <li>BMI 18.5 – 24.9 = Normal weight</li>
+            <li>BMI 25.0 – 29.9 = Overweight</li>
+            <li>BMI 30.0 and Above = Obese</li>
+         </ul>
+         <p>Note that BMI is interpreted differently in children. Growth charts and percentiles are used. If they are at or above the 95th percentile of children their age they are considered obese.</p>
+      </div>
+
+   </div>
+
+   <script src="js/script.js"></script>
+</body>
+
+</html>
